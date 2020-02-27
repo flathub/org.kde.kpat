@@ -36,8 +36,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://fc-solve.shlomifish.org/downloads/fc-solve/freecell-solver-5.16.0.tar.xz",
-                    "sha256": "7f12dc75d23493c57ec966de8d05ede18d934c597494e1cb30052c6f08808f65"
+                    "url": "https://fc-solve.shlomifish.org/downloads/fc-solve/freecell-solver-5.18.0.tar.xz",
+                    "sha256": "386080dd1d42d1fa0e120e02caf34b7a9c5aa11155145f5654d0cf53a1359f20"
                 }
             ],
             "modules": [
@@ -94,10 +94,10 @@
                     "buildsystem": "simple",
                     "build-commands": [
                         "echo 'this is a workaround for a flatpak+perl limitation'",
-                        "tar xhf Path-Tiny-0.108.tar.gz",
-                        "tar xhf Template-Toolkit-2.29.tar.gz",
-                        "cd Path-Tiny-0.108 && perl Makefile.PL PREFIX=/app && make && make install",
-                        "cd Template-Toolkit-2.29 && perl Makefile.PL PREFIX=/app && make && make install",
+                        "tar xhf Path-Tiny-0.112.tar.gz",
+                        "tar xhf Template-Toolkit-3.007.tar.gz",
+                        "cd Path-Tiny-0.112 && perl Makefile.PL PREFIX=/app && make && make install",
+                        "cd Template-Toolkit-3.007 && perl Makefile.PL PREFIX=/app && make && make install",
                         "ln -s /app/lib/perl5/site_perl/5.30.0/$(basename `ls -d /usr/lib/perl5/5.30.0/*-linux`) /app/lib/perl5/site_perl/5.30.0/arch"
                     ],
                     "post-install": [
@@ -106,13 +106,13 @@
                     "sources": [
                         {
                             "type": "file",
-                            "url": "https://cpan.metacpan.org/authors/id/D/DA/DAGOLDEN/Path-Tiny-0.108.tar.gz",
-                            "sha256": "3c49482be2b3eb7ddd7e73a5b90cff648393f5d5de334ff126ce7a3632723ff5"
+                            "url": "https://cpan.metacpan.org/authors/id/D/DA/DAGOLDEN/Path-Tiny-0.112.tar.gz",
+                            "sha256": "813df2d140c65f795daefd8eca18e61194ecac7050c5406a069db86dea31cc3a"
                         },
                         {
                             "type": "file",
-                            "url": "https://search.cpan.org/CPAN/authors/id/A/AT/ATOOMIC/Template-Toolkit-2.29.tar.gz",
-                            "sha256": "2bddd71cf41fb805fd5234780daf53226b8e7004c623e1647ba2658113614779"
+                            "url": "https://search.cpan.org/CPAN/authors/id/A/AT/ATOOMIC/Template-Toolkit-3.007.tar.gz",
+                            "sha256": "d7592db3e25355b02b261f845bdb2804aee055d0d8fddd2a4924931ddc2809ca"
                         }
                     ]
                 }
