@@ -36,8 +36,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://fc-solve.shlomifish.org/downloads/fc-solve/freecell-solver-5.20.0.tar.xz",
-                    "sha256": "04935fe817e71c8faaf7f02559f920b7678b1ffc57b465f3e4ca9fa86dea4d5c"
+                    "url": "https://fc-solve.shlomifish.org/downloads/fc-solve/freecell-solver-5.22.1.tar.xz",
+                    "sha256": "7603b161adb39dda932c734c1008c6e000b40ad69096c239cdf552c9f0b9591b"
                 }
             ],
             "modules": [
@@ -48,8 +48,8 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://github.com/shlomif/rinutils/releases/download/0.2.0/rinutils-0.2.0.tar.xz",
-                            "sha256": "2abcf60b99251f16f7a76827969cd626322f81f21500974deac4d1cff9f5c721"
+                            "url": "https://github.com/shlomif/rinutils/releases/download/0.4.0/rinutils-0.4.0.tar.xz",
+                            "sha256": "ccabff71b0ac7de73036cf9613406ffff760daf14e0c6f8443fd299154bfd38a"
                         }
                     ]
                 },
@@ -84,8 +84,8 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://pypi.io/packages/source/p/pysol_cards/pysol_cards-0.8.7.tar.gz",
-                            "sha256": "b723c94ee5ccaa86ac40208cdd0b10e30f403f0c739731e5484e53a7932eecf8"
+                            "url": "https://pypi.io/packages/source/p/pysol_cards/pysol_cards-0.8.9.tar.gz",
+                            "sha256": "3485e681a2cbec6241359cb4170889cac0919571ca622a4eb10750d2a34f5c05"
                         }
                     ]
                 },
@@ -95,9 +95,9 @@
                     "build-commands": [
                         "echo 'this is a workaround for a flatpak+perl limitation'",
                         "tar xhf Path-Tiny-0.112.tar.gz",
-                        "tar xhf Template-Toolkit-3.007.tar.gz",
+                        "tar xhf Template-Toolkit-3.008.tar.gz",
                         "cd Path-Tiny-0.112 && perl Makefile.PL PREFIX=/app && make && make install",
-                        "cd Template-Toolkit-3.007 && perl Makefile.PL PREFIX=/app && make && make install",
+                        "cd Template-Toolkit-3.008 && perl Makefile.PL PREFIX=/app && make && make install",
                         "ln -s /app/lib/perl5/site_perl/5.30.0/$(basename `ls -d /usr/lib/perl5/5.30.0/*-linux`) /app/lib/perl5/site_perl/5.30.0/arch"
                     ],
                     "post-install": [
@@ -111,8 +111,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://search.cpan.org/CPAN/authors/id/A/AT/ATOOMIC/Template-Toolkit-3.007.tar.gz",
-                            "sha256": "d7592db3e25355b02b261f845bdb2804aee055d0d8fddd2a4924931ddc2809ca"
+                            "url": "https://search.cpan.org/CPAN/authors/id/A/AT/ATOOMIC/Template-Toolkit-3.008.tar.gz",
+                            "sha256": "52400f68bef6731b0fca00e3438ed835b29ab9fec72a404866dee8fc139da692"
                         }
                     ]
                 }
