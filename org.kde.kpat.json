@@ -36,8 +36,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://fc-solve.shlomifish.org/downloads/fc-solve/freecell-solver-5.22.1.tar.xz",
-                    "sha256": "7603b161adb39dda932c734c1008c6e000b40ad69096c239cdf552c9f0b9591b"
+                    "url": "https://fc-solve.shlomifish.org/downloads/fc-solve/freecell-solver-6.0.1.tar.xz",
+                    "sha256": "9f1a4c6d5c8ac54c6619b3b988efb5562d460cd048d33345e52a0c849fd0d9df"
                 }
             ],
             "modules": [
@@ -48,8 +48,8 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://github.com/shlomif/rinutils/releases/download/0.4.0/rinutils-0.4.0.tar.xz",
-                            "sha256": "ccabff71b0ac7de73036cf9613406ffff760daf14e0c6f8443fd299154bfd38a"
+                            "url": "https://github.com/shlomif/rinutils/releases/download/0.4.1/rinutils-0.4.1.tar.xz",
+                            "sha256": "9744fc52f91b817648958b51fca3e331550c6c240308df76b84f512d84a65ef5"
                         }
                     ]
                 },
@@ -73,7 +73,7 @@
                     "build-commands": [
                         "pip3 install --prefix=/app --no-deps ."
                     ],
-                    "sources": [ { "type": "git", "url": "https://github.com/openstack/pbr.git", "tag": "5.4.4" } ]
+                    "sources": [ { "type": "git", "url": "https://github.com/openstack/pbr.git", "tag": "5.4.5" } ]
                 },
                 {
                     "name": "pysol_cards",
@@ -84,8 +84,8 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://pypi.io/packages/source/p/pysol_cards/pysol_cards-0.8.9.tar.gz",
-                            "sha256": "3485e681a2cbec6241359cb4170889cac0919571ca622a4eb10750d2a34f5c05"
+                            "url": "https://pypi.io/packages/source/p/pysol_cards/pysol_cards-0.10.1.tar.gz",
+                            "sha256": "ea6ac7e5849d0002cc880868f3a82a84332d5bbb79eb6496ed9676a104046297"
                         }
                     ]
                 },
@@ -95,9 +95,15 @@
                     "build-commands": [
                         "echo 'this is a workaround for a flatpak+perl limitation'",
                         "tar xhf Path-Tiny-0.112.tar.gz",
-                        "tar xhf Template-Toolkit-3.008.tar.gz",
+                        "tar xhf Template-Toolkit-3.009.tar.gz",
+                        "tar xhf Moo-2.003006.tar.gz",
+                        "tar xhf Module-Runtime-0.016.tar.gz",
+                        "tar xhf Sub-Quote-2.006003.tar.gz",
                         "cd Path-Tiny-0.112 && perl Makefile.PL PREFIX=/app && make && make install",
-                        "cd Template-Toolkit-3.008 && perl Makefile.PL PREFIX=/app && make && make install",
+                        "cd Template-Toolkit-3.009 && perl Makefile.PL PREFIX=/app && make && make install",
+                        "cd Moo-2.003006 && perl Makefile.PL PREFIX=/app && make && make install",
+                        "cd Module-Runtime-0.016 && perl Makefile.PL PREFIX=/app && make && make install",
+                        "cd Sub-Quote-2.006003 && perl Makefile.PL PREFIX=/app && make && make install",
                         "ln -s /app/lib/perl5/site_perl/5.30.0/$(basename `ls -d /usr/lib/perl5/5.30.0/*-linux`) /app/lib/perl5/site_perl/5.30.0/arch"
                     ],
                     "post-install": [
@@ -111,8 +117,23 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://search.cpan.org/CPAN/authors/id/A/AT/ATOOMIC/Template-Toolkit-3.008.tar.gz",
-                            "sha256": "52400f68bef6731b0fca00e3438ed835b29ab9fec72a404866dee8fc139da692"
+                            "url": "https://search.cpan.org/CPAN/authors/id/A/AT/ATOOMIC/Template-Toolkit-3.009.tar.gz",
+                            "sha256": "d6ad23bbf637a59b5dfd1ac006460dfcb185982e4852cde77150fbd085f1f5b6"
+                        },
+                        {
+                            "type": "file",
+                            "url": "https://cpan.metacpan.org/authors/id/H/HA/HAARG/Moo-2.003006.tar.gz",
+                            "sha256": "bcb2092ab18a45005b5e2e84465ebf3a4999d8e82a43a09f5a94d859ae7f2472"
+                        },
+                        {
+                            "type": "file",
+                            "url": "https://search.cpan.org/CPAN/authors/id/Z/ZE/ZEFRAM/Module-Runtime-0.016.tar.gz",
+                            "sha256": "68302ec646833547d410be28e09676db75006f4aa58a11f3bdb44ffe99f0f024"
+                        },
+                        {
+                            "type": "file",
+                            "url": "https://search.cpan.org/CPAN/authors/id/H/HA/HAARG/Sub-Quote-2.006003.tar.gz",
+                            "sha256": "be1f3a6f773f351f203cdc8f614803ac492b77d15fd68d5b1f0cd3884be18176"
                         }
                     ]
                 }
