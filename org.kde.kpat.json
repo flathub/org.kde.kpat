@@ -19,8 +19,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/release-service/20.08.0/src/libkdegames-20.08.0.tar.xz",
-                    "sha256": "d77f5e2d913c68286014fe1438b9909826931aaa944a0ce1753d1a449766d99c"
+                    "url": "https://download.kde.org/stable/release-service/20.08.1/src/libkdegames-20.08.1.tar.xz",
+                    "sha256": "6ab0b143dcba2d935dd0182c9154657ebbfb205c28bc86e2e13875b58e23737d"
                 }
             ]
         },
@@ -145,8 +145,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/release-service/20.08.0/src/kpat-20.08.0.tar.xz",
-                    "sha256": "feaca3a018a8b2a94a183915b29ff671474911b1da3a149bf3ba70fdcd0a6f53"
+                    "url": "https://download.kde.org/stable/release-service/20.08.1/src/kpat-20.08.1.tar.xz",
+                    "sha256": "2c23ee028c03c5c210b110a2ad253aa7d91c5a0abcb101eb2b3f4c640092463c"
                 }
             ]
         }
