@@ -147,10 +147,6 @@
                     "type": "archive",
                     "url": "https://download.kde.org/stable/release-service/20.08.2/src/kpat-20.08.2.tar.xz",
                     "sha256": "e4aaed4e876212a926a05d252dab9d01f240d829e383c6072e168a4f78e6d446"
-                },
-                {
-                    "type": "patch",
-                    "path": "all_files.patch"
                 }
             ]
         }
