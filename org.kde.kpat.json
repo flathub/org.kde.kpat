@@ -36,8 +36,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://fc-solve.shlomifish.org/downloads/fc-solve/freecell-solver-6.0.1.tar.xz",
-                    "sha256": "9f1a4c6d5c8ac54c6619b3b988efb5562d460cd048d33345e52a0c849fd0d9df"
+                    "url": "https://fc-solve.shlomifish.org/downloads/fc-solve/freecell-solver-6.2.0.tar.xz",
+                    "sha256": "2267758cc00ec7e7f0c47e61f398032afb4bb5386d1e54d5164ca815547f7423"
                 }
             ],
             "modules": [
@@ -48,8 +48,8 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://github.com/shlomif/rinutils/releases/download/0.4.1/rinutils-0.4.1.tar.xz",
-                            "sha256": "9744fc52f91b817648958b51fca3e331550c6c240308df76b84f512d84a65ef5"
+                            "url": "https://github.com/shlomif/rinutils/releases/download/0.6.0/rinutils-0.6.0.tar.xz",
+                            "sha256": "65eed1631707f3cae737dc0da6ee09f7f8a54502cc08e3b8aee3734ce4e30f0d"
                         }
                     ]
                 },
@@ -73,7 +73,7 @@
                     "build-commands": [
                         "pip3 install --prefix=/app --no-deps ."
                     ],
-                    "sources": [ { "type": "git", "url": "https://github.com/openstack/pbr.git", "tag": "5.4.5" } ]
+                    "sources": [ { "type": "git", "url": "https://github.com/openstack/pbr.git", "tag": "5.5.1" } ]
                 },
                 {
                     "name": "pysol_cards",
@@ -94,12 +94,12 @@
                     "buildsystem": "simple",
                     "build-commands": [
                         "echo 'this is a workaround for a flatpak+perl limitation'",
-                        "tar xhf Path-Tiny-0.112.tar.gz",
+                        "tar xhf Path-Tiny-0.114.tar.gz",
                         "tar xhf Template-Toolkit-3.009.tar.gz",
                         "tar xhf Moo-2.003006.tar.gz",
                         "tar xhf Module-Runtime-0.016.tar.gz",
                         "tar xhf Sub-Quote-2.006003.tar.gz",
-                        "cd Path-Tiny-0.112 && perl Makefile.PL PREFIX=/app && make && make install",
+                        "cd Path-Tiny-0.114 && perl Makefile.PL PREFIX=/app && make && make install",
                         "cd Template-Toolkit-3.009 && perl Makefile.PL PREFIX=/app && make && make install",
                         "cd Moo-2.003006 && perl Makefile.PL PREFIX=/app && make && make install",
                         "cd Module-Runtime-0.016 && perl Makefile.PL PREFIX=/app && make && make install",
@@ -112,8 +112,8 @@
                     "sources": [
                         {
                             "type": "file",
-                            "url": "https://cpan.metacpan.org/authors/id/D/DA/DAGOLDEN/Path-Tiny-0.112.tar.gz",
-                            "sha256": "813df2d140c65f795daefd8eca18e61194ecac7050c5406a069db86dea31cc3a"
+                            "url": "https://cpan.metacpan.org/authors/id/D/DA/DAGOLDEN/Path-Tiny-0.114.tar.gz",
+                            "sha256": "cd0f88f37a58fc3667ec065767fe01e73ee6efa18a112bfd3508cf6579ca00e1"
                         },
                         {
                             "type": "file",
