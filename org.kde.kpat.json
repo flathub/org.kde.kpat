@@ -9,7 +9,8 @@
         "--device=dri",
         "--share=ipc",
         "--socket=x11",
-        "--socket=wayland"
+        "--socket=wayland",
+        "--share=network"
     ],
 
     "modules": [
