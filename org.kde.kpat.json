@@ -20,8 +20,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/release-service/20.08.3/src/libkdegames-20.08.3.tar.xz",
-                    "sha256": "085c5200bf5f860be87121ea8c6ebfb106c12fbd09e790297e6b948539678bb1"
+                    "url": "https://download.kde.org/stable/release-service/20.12.0/src/libkdegames-20.12.0.tar.xz",
+                    "sha256": "48a019d871a99ae903b8dd01482473aae32d10d55cac918f2b8626e37958688b"
                 }
             ]
         },
@@ -49,8 +49,8 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://github.com/shlomif/rinutils/releases/download/0.6.0/rinutils-0.6.0.tar.xz",
-                            "sha256": "65eed1631707f3cae737dc0da6ee09f7f8a54502cc08e3b8aee3734ce4e30f0d"
+                            "url": "https://github.com/shlomif/rinutils/releases/download/0.8.0/rinutils-0.8.0.tar.xz",
+                            "sha256": "1d9677cdfb2792436db993aeff7e8e91670d5c4deae62b70ec82d452615409e0"
                         }
                     ]
                 },
@@ -141,13 +141,29 @@
             ]
         },
         {
+            "name": "black-hole-solver",
+            "buildsystem": "cmake",
+            "build-options" : {
+                "env": {
+                    "PERLLIB": "/app/lib/perl5/site_perl/5.32.0:/app/lib/perl5/site_perl/5.32.0/arch"
+                }
+            },
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://fc-solve.shlomifish.org/downloads/fc-solve/black-hole-solver-1.10.1.tar.xz",
+                    "sha256": "36e1953a99e02e82489a3cb109fb590bcab307b4ddaec34cb0e67347668511e2"
+                }
+            ]
+        },
+        {
             "name": "kpat",
             "buildsystem": "cmake-ninja",
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/release-service/20.08.3/src/kpat-20.08.3.tar.xz",
-                    "sha256": "493b20d53806cbb1bd656817ef139de80197ec585bb097c4bd28c23b655aa4c5"
+                    "url": "https://download.kde.org/stable/release-service/20.12.0/src/kpat-20.12.0.tar.xz",
+                    "sha256": "c00f9afeb7b2d4e37e626a9379df08f30077d0c1965a674795b099dd11588d8f"
                 }
             ]
         }
