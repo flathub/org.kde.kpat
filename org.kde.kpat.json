@@ -10,7 +10,8 @@
         "--share=ipc",
         "--socket=x11",
         "--socket=wayland",
-        "--share=network"
+        "--share=network",
+        "--socket=pulseaudio"
     ],
 
     "modules": [
