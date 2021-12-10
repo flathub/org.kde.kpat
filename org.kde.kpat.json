@@ -85,8 +85,8 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://pypi.io/packages/source/p/pysol_cards/pysol_cards-0.10.1.tar.gz",
-                            "sha256": "ea6ac7e5849d0002cc880868f3a82a84332d5bbb79eb6496ed9676a104046297"
+                            "url": "https://pypi.io/packages/source/p/pysol_cards/pysol_cards-0.14.2.tar.gz",
+                            "sha256": "c08de857577bc3eec970c3add3c45b365316cc2844acd6083bb56ea31d40eaf0"
                         }
                     ]
                 },
@@ -95,12 +95,12 @@
                     "buildsystem": "simple",
                     "build-commands": [
                         "echo 'this is a workaround for a flatpak+perl limitation'",
-                        "tar xhf Path-Tiny-0.118.tar.gz",
+                        "tar xhf Path-Tiny-0.120.tar.gz",
                         "tar xhf Template-Toolkit-3.009.tar.gz",
                         "tar xhf Moo-2.005004.tar.gz",
                         "tar xhf Module-Runtime-0.016.tar.gz",
                         "tar xhf Sub-Quote-2.006006.tar.gz",
-                        "cd Path-Tiny-0.118 && perl Makefile.PL PREFIX=/app && make && make install",
+                        "cd Path-Tiny-0.120 && perl Makefile.PL PREFIX=/app && make && make install",
                         "cd Template-Toolkit-3.009 && perl Makefile.PL PREFIX=/app && make && make install",
                         "cd Moo-2.005004 && perl Makefile.PL PREFIX=/app && make && make install",
                         "cd Module-Runtime-0.016 && perl Makefile.PL PREFIX=/app && make && make install",
@@ -113,8 +113,8 @@
                     "sources": [
                         {
                             "type": "file",
-                            "url": "https://cpan.metacpan.org/authors/id/D/DA/DAGOLDEN/Path-Tiny-0.118.tar.gz",
-                            "sha256": "32138d8d0f4c9c1a84d2a8f91bc5e913d37d8a7edefbb15a10961bfed560b0fd"
+                            "url": "https://cpan.metacpan.org/authors/id/D/DA/DAGOLDEN/Path-Tiny-0.120.tar.gz",
+                            "sha256": "66a1164981d449da46cc88383fe37f9e352e87e9570bfb960e43fe8ff016ee1b"
                         },
                         {
                             "type": "file",
