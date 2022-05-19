@@ -13,7 +13,6 @@
         "--share=network",
         "--socket=pulseaudio"
     ],
-
     "modules": [
         {
             "name": "libkdegames",
@@ -29,8 +28,11 @@
         {
             "name": "freecell-solver",
             "buildsystem": "cmake",
-            "config-opts": [ "-DFCS_WITH_TEST_SUITE=OFF", "-DFCS_BUILD_DOCS=OFF" ],
-            "build-options" : {
+            "config-opts": [
+                "-DFCS_WITH_TEST_SUITE=OFF",
+                "-DFCS_BUILD_DOCS=OFF"
+            ],
+            "build-options": {
                 "env": {
                     "PERLLIB": "/app/lib/perl5/site_perl/5.34.0:/app/lib/perl5/site_perl/5.34.0/arch"
                 }
@@ -52,12 +54,14 @@
                 {
                     "name": "rinutils",
                     "buildsystem": "cmake",
-                    "config-opts": [ "-DWITH_TEST_SUITE=OFF" ],
+                    "config-opts": [
+                        "-DWITH_TEST_SUITE=OFF"
+                    ],
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://github.com/shlomif/rinutils/releases/download/0.10.0/rinutils-0.10.0.tar.xz",
-                            "sha256": "70d89f0a8464f8f494f33704b7c9396e7fca392e8aafaa4465710c1a389e9806",
+                            "url": "https://github.com/shlomif/rinutils/releases/download/0.10.1/rinutils-0.10.1.tar.xz",
+                            "sha256": "31ec258ce99de7bbbe79f3338ce73048dac45425045eb2bd0d6bd92d1b8b9afb",
                             "x-checker-data": {
                                 "type": "anitya",
                                 "project-id": 230526,
@@ -87,7 +91,13 @@
                     "build-commands": [
                         "pip3 install --prefix=/app --no-deps ."
                     ],
-                    "sources": [ { "type": "git", "url": "https://github.com/openstack/pbr.git", "tag": "5.5.1" } ]
+                    "sources": [
+                        {
+                            "type": "git",
+                            "url": "https://github.com/openstack/pbr.git",
+                            "tag": "5.5.1"
+                        }
+                    ]
                 },
                 {
                     "name": "pysol_cards",
@@ -156,7 +166,7 @@
         {
             "name": "black-hole-solver",
             "buildsystem": "cmake",
-            "build-options" : {
+            "build-options": {
                 "env": {
                     "PERLLIB": "/app/lib/perl5/site_perl/5.34.0:/app/lib/perl5/site_perl/5.34.0/arch"
                 }
