@@ -34,7 +34,7 @@
             ],
             "build-options": {
                 "env": {
-                    "PERLLIB": "/app/lib/perl5/site_perl/5.34.0:/app/lib/perl5/site_perl/5.34.0/arch"
+                    "PERLLIB": "/app/lib/perl5/site_perl/5.34.1:/app/lib/perl5/site_perl/5.34.1/arch"
                 }
             },
             "sources": [
@@ -95,7 +95,7 @@
                         {
                             "type": "git",
                             "url": "https://github.com/openstack/pbr.git",
-                            "tag": "5.5.1"
+                            "tag": "5.9.0"
                         }
                     ]
                 },
@@ -128,7 +128,7 @@
                         "cd Moo-2.005004 && perl Makefile.PL PREFIX=/app && make && make install",
                         "cd Module-Runtime-0.016 && perl Makefile.PL PREFIX=/app && make && make install",
                         "cd Sub-Quote-2.006006 && perl Makefile.PL PREFIX=/app && make && make install",
-                        "ln -s /app/lib/perl5/site_perl/5.34.0/$(basename `ls -d /usr/lib/perl5/5.34.0/*-linux`) /app/lib/perl5/site_perl/5.34.0/arch"
+                        "ln -s /app/lib/perl5/site_perl/5.34.1/$(basename `ls -d /usr/lib/perl5/5.34.1/*-linux`) /app/lib/perl5/site_perl/5.34.1/arch"
                     ],
                     "post-install": [
                         "chmod -R u+w /app/lib/perl5/site_perl"
@@ -168,7 +168,7 @@
             "buildsystem": "cmake",
             "build-options": {
                 "env": {
-                    "PERLLIB": "/app/lib/perl5/site_perl/5.34.0:/app/lib/perl5/site_perl/5.34.0/arch"
+                    "PERLLIB": "/app/lib/perl5/site_perl/5.34.1:/app/lib/perl5/site_perl/5.34.1/arch"
                 }
             },
             "sources": [
