@@ -20,8 +20,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/release-service/22.04.2/src/libkdegames-22.04.2.tar.xz",
-                    "sha256": "c33af6c13540add132122b36b2faabc1f0beaf2c06d29e575f7789f1c5342911"
+                    "url": "https://download.kde.org/stable/release-service/22.04.3/src/libkdegames-22.04.3.tar.xz",
+                    "sha256": "f6af5b98c6f5a4061b5124d04e5cf0c2cc9e21df93824559153d5565d541f845"
                 }
             ]
         },
@@ -34,7 +34,7 @@
             ],
             "build-options": {
                 "env": {
-                    "PERLLIB": "/app/lib/perl5/site_perl/5.34.0:/app/lib/perl5/site_perl/5.34.0/arch"
+                    "PERLLIB": "/app/lib/perl5/site_perl/5.34.1:/app/lib/perl5/site_perl/5.34.1/arch"
                 }
             },
             "sources": [
@@ -95,7 +95,7 @@
                         {
                             "type": "git",
                             "url": "https://github.com/openstack/pbr.git",
-                            "tag": "5.5.1"
+                            "tag": "5.9.0"
                         }
                     ]
                 },
@@ -128,7 +128,7 @@
                         "cd Moo-2.005004 && perl Makefile.PL PREFIX=/app && make && make install",
                         "cd Module-Runtime-0.016 && perl Makefile.PL PREFIX=/app && make && make install",
                         "cd Sub-Quote-2.006006 && perl Makefile.PL PREFIX=/app && make && make install",
-                        "ln -s /app/lib/perl5/site_perl/5.34.0/$(basename `ls -d /usr/lib/perl5/5.34.0/*-linux`) /app/lib/perl5/site_perl/5.34.0/arch"
+                        "ln -s /app/lib/perl5/site_perl/5.34.1/$(basename `ls -d /usr/lib/perl5/5.34.1/*-linux`) /app/lib/perl5/site_perl/5.34.1/arch"
                     ],
                     "post-install": [
                         "chmod -R u+w /app/lib/perl5/site_perl"
@@ -168,7 +168,7 @@
             "buildsystem": "cmake",
             "build-options": {
                 "env": {
-                    "PERLLIB": "/app/lib/perl5/site_perl/5.34.0:/app/lib/perl5/site_perl/5.34.0/arch"
+                    "PERLLIB": "/app/lib/perl5/site_perl/5.34.1:/app/lib/perl5/site_perl/5.34.1/arch"
                 }
             },
             "sources": [
@@ -185,8 +185,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/release-service/22.04.2/src/kpat-22.04.2.tar.xz",
-                    "sha256": "229f95d01e1c22d481396060040eae19f023936ee42a2ed56a096590b61a023e"
+                    "url": "https://download.kde.org/stable/release-service/22.04.3/src/kpat-22.04.3.tar.xz",
+                    "sha256": "e353e38e6289f81f29040bebb8f1c550584dc793deabafc5bd3e14ca28fb748d"
                 }
             ]
         }
