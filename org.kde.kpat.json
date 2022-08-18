@@ -27,7 +27,7 @@
                         "project-id": 8763,
                         "stable-only": true,
                         "url-template": "https://download.kde.org/stable/release-service/$version/src/libkdegames-$version.tar.xz"
-                    }            
+                    }
                 }
             ]
         },
@@ -191,14 +191,14 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/release-service/22.04.3/src/kpat-22.04.3.tar.xz",
-                    "sha256": "e353e38e6289f81f29040bebb8f1c550584dc793deabafc5bd3e14ca28fb748d",
+                    "url": "https://download.kde.org/stable/release-service/22.08.0/src/kpat-22.08.0.tar.xz",
+                    "sha256": "66a1f8697339c5e2b9fc5cabc9ab3f83266d86fde06e54729eb8f23e5043a9e5",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 8763,
                         "stable-only": true,
                         "url-template": "https://download.kde.org/stable/release-service/$version/src/kpat-$version.tar.xz"
-                    }            
+                    }
                 }
             ]
         }
