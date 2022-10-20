@@ -101,7 +101,7 @@
                     "name": "pbr",
                     "buildsystem": "simple",
                     "build-commands": [
-                        "PBR_VERSION=5.10.0 pip3 install --prefix=/app --no-deps ."
+                        "PBR_VERSION=5.11.0 pip3 install --prefix=/app --no-deps ."
                     ],
                     "sources": [
                         {
@@ -142,12 +142,12 @@
                     "buildsystem": "simple",
                     "build-commands": [
                         "echo 'this is a workaround for a flatpak+perl limitation'",
-                        "tar xhf Path-Tiny-0.128.tar.gz",
+                        "tar xhf Path-Tiny-0.130.tar.gz",
                         "tar xhf Template-Toolkit-3.101.tar.gz",
                         "tar xhf Moo-2.005004.tar.gz",
                         "tar xhf Module-Runtime-0.016.tar.gz",
                         "tar xhf Sub-Quote-2.006006.tar.gz",
-                        "cd Path-Tiny-0.128 && perl Makefile.PL PREFIX=/app && make && make install",
+                        "cd Path-Tiny-0.130 && perl Makefile.PL PREFIX=/app && make && make install",
                         "cd Template-Toolkit-3.101 && perl Makefile.PL PREFIX=/app && make && make install",
                         "cd Moo-2.005004 && perl Makefile.PL PREFIX=/app && make && make install",
                         "cd Module-Runtime-0.016 && perl Makefile.PL PREFIX=/app && make && make install",
@@ -160,8 +160,8 @@
                     "sources": [
                         {
                             "type": "file",
-                            "url": "https://cpan.metacpan.org/authors/id/D/DA/DAGOLDEN/Path-Tiny-0.128.tar.gz",
-                            "sha256": "263e164d7b2e01f331b482e37119ea9bea366e402b0b08b7d8fc14d3024ee57c",
+                            "url": "https://cpan.metacpan.org/authors/id/D/DA/DAGOLDEN/Path-Tiny-0.130.tar.gz",
+                            "sha256": "74109aec04ddd83d80ee14a5346e8bc3e3f4673238e1c7358693bff348196c13",
                             "x-checker-data": {
                                 "type": "anitya",
                                 "project-id": 11962,
