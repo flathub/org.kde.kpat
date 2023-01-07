@@ -144,12 +144,12 @@
                         "echo 'this is a workaround for a flatpak+perl limitation'",
                         "tar xhf Path-Tiny-0.144.tar.gz",
                         "tar xhf Template-Toolkit-3.101.tar.gz",
-                        "tar xhf Moo-2.005004.tar.gz",
+                        "tar xhf Moo-2.005005.tar.gz",
                         "tar xhf Module-Runtime-0.016.tar.gz",
                         "tar xhf Sub-Quote-2.006006.tar.gz",
                         "cd Path-Tiny-0.144 && perl Makefile.PL PREFIX=/app && make && make install",
                         "cd Template-Toolkit-3.101 && perl Makefile.PL PREFIX=/app && make && make install",
-                        "cd Moo-2.005004 && perl Makefile.PL PREFIX=/app && make && make install",
+                        "cd Moo-2.005005 && perl Makefile.PL PREFIX=/app && make && make install",
                         "cd Module-Runtime-0.016 && perl Makefile.PL PREFIX=/app && make && make install",
                         "cd Sub-Quote-2.006006 && perl Makefile.PL PREFIX=/app && make && make install",
                         "ln -s /app/lib/perl5/site_perl/5.34.1/$(basename `ls -d /usr/lib/perl5/5.34.1/*-linux`) /app/lib/perl5/site_perl/5.34.1/arch"
@@ -182,8 +182,8 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://cpan.metacpan.org/authors/id/H/HA/HAARG/Moo-2.005004.tar.gz",
-                            "sha256": "e3030b80bd554a66f6b3c27fd53b1b5909d12af05c4c11ece9a58f8d1e478928",
+                            "url": "https://cpan.metacpan.org/authors/id/H/HA/HAARG/Moo-2.005005.tar.gz",
+                            "sha256": "fb5a2952649faed07373f220b78004a9c6aba387739133740c1770e9b1f4b108",
                             "x-checker-data": {
                                 "type": "anitya",
                                 "project-id": 3123,
