@@ -1,7 +1,7 @@
 {
     "id": "org.kde.kpat",
     "runtime": "org.kde.Platform",
-    "runtime-version": "5.15-21.08",
+    "runtime-version": "5.15-22.08",
     "sdk": "org.kde.Sdk",
     "command": "kpat",
     "rename-icon": "kpat",
@@ -40,7 +40,7 @@
             ],
             "build-options": {
                 "env": {
-                    "PERLLIB": "/app/lib/perl5/site_perl/5.34.1:/app/lib/perl5/site_perl/5.34.1/arch"
+                    "PERLLIB": "/app/lib/perl5/site_perl/5.36.0:/app/lib/perl5/site_perl/5.36.0/arch"
                 }
             },
             "sources": [
@@ -152,7 +152,7 @@
                         "cd Moo-2.005005 && perl Makefile.PL PREFIX=/app && make && make install",
                         "cd Module-Runtime-0.016 && perl Makefile.PL PREFIX=/app && make && make install",
                         "cd Sub-Quote-2.006008 && perl Makefile.PL PREFIX=/app && make && make install",
-                        "ln -s /app/lib/perl5/site_perl/5.34.1/$(basename `ls -d /usr/lib/perl5/5.34.1/*-linux`) /app/lib/perl5/site_perl/5.34.1/arch"
+                        "ln -s /app/lib/perl5/site_perl/5.36.0/$(basename `ls -d /usr/lib/perl5/5.36.0/*-linux`) /app/lib/perl5/site_perl/5.36.0/arch"
                     ],
                     "post-install": [
                         "chmod -R u+w /app/lib/perl5/site_perl"
@@ -222,7 +222,7 @@
             "buildsystem": "cmake",
             "build-options": {
                 "env": {
-                    "PERLLIB": "/app/lib/perl5/site_perl/5.34.1:/app/lib/perl5/site_perl/5.34.1/arch"
+                    "PERLLIB": "/app/lib/perl5/site_perl/5.36.0:/app/lib/perl5/site_perl/5.36.0/arch"
                 }
             },
             "sources": [
