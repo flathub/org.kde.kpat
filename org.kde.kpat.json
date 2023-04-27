@@ -66,8 +66,8 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://github.com/shlomif/rinutils/releases/download/0.10.1/rinutils-0.10.1.tar.xz",
-                            "sha256": "31ec258ce99de7bbbe79f3338ce73048dac45425045eb2bd0d6bd92d1b8b9afb",
+                            "url": "https://github.com/shlomif/rinutils/releases/download/0.10.2/rinutils-0.10.2.tar.xz",
+                            "sha256": "d87fe1199722b7fa9bd508e135383ff0788fbd7d655cbef9757c23212f8c217b",
                             "x-checker-data": {
                                 "type": "anitya",
                                 "project-id": 230526,
