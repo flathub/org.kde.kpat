@@ -106,8 +106,8 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://github.com/openstack/pbr/archive/refs/tags/5.11.1.tar.gz",
-                            "sha256": "84319e3e1839090a74fbd776b05fc0c31d5437fd820a630e2947d65be38603de",
+                            "url": "https://github.com/openstack/pbr/archive/refs/tags/6.0.0.tar.gz",
+                            "sha256": "f546cc6fd22b76d10beda133fc741ac404266c0e5d2da42c89dc3883235c54f3",
                             "x-checker-data": {
                                 "type": "anitya",
                                 "project-id": 3960,
