@@ -245,8 +245,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/release-service/23.08.4/src/kpat-23.08.4.tar.xz",
-                    "sha256": "443cb2994ce36ebd9501e69aad356e9180ce11f77f979aaffa3b5446e8cef364",
+                    "url": "https://download.kde.org/stable/release-service/23.08.5/src/kpat-23.08.5.tar.xz",
+                    "sha256": "d5ccd09a228faa63fe5fff55fd95f85aa01d0346751e384c74cfab26c9a431bf",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 8763,
