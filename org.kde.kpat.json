@@ -20,8 +20,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/release-service/24.02.2/src/libkdegames-24.02.2.tar.xz",
-                    "sha256": "3c6bf773670e4509bbc71604bf0a14910d076434326a15756d3c47b1f5ae7e19",
+                    "url": "https://download.kde.org/stable/release-service/24.05.0/src/libkdegames-24.05.0.tar.xz",
+                    "sha256": "8cbb3bbfbcc4e9c5fd15cb61ff542de17c1f5a668407a950d47a311ea0dd7ee4",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 8763,
@@ -245,8 +245,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/release-service/24.02.2/src/kpat-24.02.2.tar.xz",
-                    "sha256": "fb9f9b78150720bfecd464f44531f101e3a6cddfe37032e392b728f821a4155a",
+                    "url": "https://download.kde.org/stable/release-service/24.05.0/src/kpat-24.05.0.tar.xz",
+                    "sha256": "b4ab56de3ab7c4fa6773739d3dd9bccaa94ca5633a6c2f2c3fb54e66348f767a",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 8763,
