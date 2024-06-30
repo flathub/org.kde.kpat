@@ -46,8 +46,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://fc-solve.shlomifish.org/downloads/fc-solve/freecell-solver-6.10.0.tar.xz",
-                    "sha256": "443ba29de08be751a60faca42a817b65b342cea93188fd7651741b75048379b4",
+                    "url": "https://fc-solve.shlomifish.org/downloads/fc-solve/freecell-solver-6.12.0.tar.xz",
+                    "sha256": "a2b89e804ce4b918ef749031676210f2095fea3a8cb129805602843c7c4884a0",
                     "x-checker-data": {
                         "type": "html",
                         "url": "https://fc-solve.shlomifish.org/download.html",
