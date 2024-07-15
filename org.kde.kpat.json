@@ -86,13 +86,13 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://files.pythonhosted.org/packages/ee/b5/5aca5217501fbd06b1e5aed6d5986baa0da5380880e6bb6f421ed18e3a32/random2-1.0.1.zip",
-                            "sha256": "34ad30aac341039872401595df9ab2c9dc36d0b7c077db1cea9ade430ed1c007",
+                            "url": "https://files.pythonhosted.org/packages/c2/f8/aba7ea7900492da2dd405aa42aa6160b83490421c7d70cf2d5aa44238a13/random2-1.0.2.tar.gz",
+                            "sha256": "3754fcef48267567cd5705fa7da6bbc3809cb3f808740313e6705acc3c057e77",
                             "x-checker-data": {
                                 "type": "anitya",
                                 "project-id": 7793,
                                 "stable-only": true,
-                                "url-template": "https://files.pythonhosted.org/packages/ee/b5/5aca5217501fbd06b1e5aed6d5986baa0da5380880e6bb6f421ed18e3a32/random2-$version.zip"
+                                "url-template": "https://files.pythonhosted.org/packages/c2/f8/aba7ea7900492da2dd405aa42aa6160b83490421c7d70cf2d5aa44238a13/random2-$version.tar.gz"
                             }
                         }
                     ]
@@ -143,12 +143,12 @@
                     "build-commands": [
                         "echo 'this is a workaround for a flatpak+perl limitation'",
                         "tar xhf Path-Tiny-0.146.tar.gz",
-                        "tar xhf Template-Toolkit-3.101.tar.gz",
+                        "tar xhf Template-Toolkit-3.102.tar.gz",
                         "tar xhf Moo-2.005005.tar.gz",
                         "tar xhf Module-Runtime-0.016.tar.gz",
                         "tar xhf Sub-Quote-2.006008.tar.gz",
                         "cd Path-Tiny-0.146 && perl Makefile.PL PREFIX=/app && make && make install",
-                        "cd Template-Toolkit-3.101 && perl Makefile.PL PREFIX=/app && make && make install",
+                        "cd Template-Toolkit-3.102 && perl Makefile.PL PREFIX=/app && make && make install",
                         "cd Moo-2.005005 && perl Makefile.PL PREFIX=/app && make && make install",
                         "cd Module-Runtime-0.016 && perl Makefile.PL PREFIX=/app && make && make install",
                         "cd Sub-Quote-2.006008 && perl Makefile.PL PREFIX=/app && make && make install",
@@ -171,13 +171,13 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://cpan.metacpan.org/authors/id/A/AB/ABW/Template-Toolkit-3.101.tar.gz",
-                            "sha256": "d2a32dd6c21e4b37c6a93df8087ca9e880cfae613a3e5efaea307b0bdcaedb58",
+                            "url": "https://cpan.metacpan.org/authors/id/T/TO/TODDR/Template-Toolkit-3.102.tar.gz",
+                            "sha256": "d161c89dee9b213a7c55709ea782e2dd5923dbd1215b9576612889e6e74a2e06",
                             "x-checker-data": {
                                 "type": "anitya",
                                 "project-id": 11970,
                                 "stable-only": true,
-                                "url-template": "https://cpan.metacpan.org/authors/id/A/AB/ABW/Template-Toolkit-$version.tar.gz"
+                                "url-template": "https://cpan.metacpan.org/authors/id/T/TO/TODDR/Template-Toolkit-$version.tar.gz"
                             }
                         },
                         {
