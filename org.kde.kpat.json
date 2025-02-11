@@ -106,8 +106,8 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://github.com/openstack/pbr/archive/refs/tags/6.1.0.tar.gz",
-                            "sha256": "08f0219c22e041601b43bffc79d7549e716288e7a78e0117578333b0917a636c",
+                            "url": "https://github.com/openstack/pbr/archive/refs/tags/6.1.1.0b1.tar.gz",
+                            "sha256": "571f4233d2a539c845324dfd216ac9a23d9e617c8c0c5875ffa57df3af04c263",
                             "x-checker-data": {
                                 "type": "anitya",
                                 "project-id": 3960,
@@ -126,8 +126,8 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://pypi.io/packages/source/p/pysol_cards/pysol_cards-0.18.0.tar.gz",
-                            "sha256": "29196eadd51a54a7bf853d0aecba168853903a24803b8554713e8c7fcc732c2c",
+                            "url": "https://pypi.io/packages/source/p/pysol_cards/pysol_cards-0.18.1.tar.gz",
+                            "sha256": "103c7c0c319e72e836e099bbb47ff54be729d975e35c11ba74d4ac5e4286b8eb",
                             "x-checker-data": {
                                 "type": "anitya",
                                 "project-id": 19639,
