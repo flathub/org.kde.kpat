@@ -40,7 +40,7 @@
             ],
             "build-options": {
                 "env": {
-                    "PERLLIB": "/app/lib/perl5/site_perl/5.40.0:/app/lib/perl5/site_perl/5.40.0/arch"
+                    "PERLLIB": "/app/lib/perl5/site_perl/5.40.1:/app/lib/perl5/site_perl/5.40.1/arch"
                 }
             },
             "sources": [
@@ -98,26 +98,6 @@
                     ]
                 },
                 {
-                    "name": "pbr",
-                    "buildsystem": "simple",
-                    "build-commands": [
-                        "PBR_VERSION=5.11.1 pip3 install --prefix=/app --no-deps ."
-                    ],
-                    "sources": [
-                        {
-                            "type": "archive",
-                            "url": "https://github.com/openstack/pbr/archive/refs/tags/6.1.0.tar.gz",
-                            "sha256": "08f0219c22e041601b43bffc79d7549e716288e7a78e0117578333b0917a636c",
-                            "x-checker-data": {
-                                "type": "anitya",
-                                "project-id": 3960,
-                                "stable-only": true,
-                                "url-template": "https://github.com/openstack/pbr/archive/refs/tags/$version.tar.gz"
-                            }
-                        }
-                    ]
-                },
-                {
                     "name": "pysol_cards",
                     "buildsystem": "simple",
                     "build-commands": [
@@ -126,8 +106,8 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://pypi.io/packages/source/p/pysol_cards/pysol_cards-0.18.0.tar.gz",
-                            "sha256": "29196eadd51a54a7bf853d0aecba168853903a24803b8554713e8c7fcc732c2c",
+                            "url": "https://pypi.io/packages/source/p/pysol_cards/pysol_cards-0.18.1.tar.gz",
+                            "sha256": "103c7c0c319e72e836e099bbb47ff54be729d975e35c11ba74d4ac5e4286b8eb",
                             "x-checker-data": {
                                 "type": "anitya",
                                 "project-id": 19639,
@@ -152,7 +132,7 @@
                         "cd Moo-2.005005 && perl Makefile.PL PREFIX=/app && make && make install",
                         "cd Module-Runtime-0.016 && perl Makefile.PL PREFIX=/app && make && make install",
                         "cd Sub-Quote-2.006008 && perl Makefile.PL PREFIX=/app && make && make install",
-                        "ln -s /app/lib/perl5/site_perl/5.40.0/$(basename `ls -d /usr/lib/perl5/5.40.0/*-linux`) /app/lib/perl5/site_perl/5.40.0/arch"
+                        "ln -s /app/lib/perl5/site_perl/5.40.1/$(basename `ls -d /usr/lib/perl5/5.40.1/*-linux`) /app/lib/perl5/site_perl/5.40.1/arch"
                     ],
                     "post-install": [
                         "chmod -R u+w /app/lib/perl5/site_perl"
@@ -222,7 +202,7 @@
             "buildsystem": "cmake",
             "build-options": {
                 "env": {
-                    "PERLLIB": "/app/lib/perl5/site_perl/5.40.0:/app/lib/perl5/site_perl/5.40.0/arch"
+                    "PERLLIB": "/app/lib/perl5/site_perl/5.40.1:/app/lib/perl5/site_perl/5.40.1/arch"
                 }
             },
             "sources": [
