@@ -208,8 +208,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://fc-solve.shlomifish.org/downloads/fc-solve/black-hole-solver-1.12.0.tar.xz",
-                    "sha256": "d32f32536f7573292588f41bb0d85ae42d561376c218dc4ab6badfe4904a37a7",
+                    "url": "https://fc-solve.shlomifish.org/downloads/fc-solve/black-hole-solver-1.14.0.tar.xz",
+                    "sha256": "5c47bd093dbb160f4b090fd670ab7c12b4371d39b17b3bbd8c6c4a12975557c0",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 229362,
