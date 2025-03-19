@@ -122,12 +122,12 @@
                     "buildsystem": "simple",
                     "build-commands": [
                         "echo 'this is a workaround for a flatpak+perl limitation'",
-                        "tar xhf Path-Tiny-0.146.tar.gz",
+                        "tar xhf Path-Tiny-0.148.tar.gz",
                         "tar xhf Template-Toolkit-3.102.tar.gz",
                         "tar xhf Moo-2.005005.tar.gz",
                         "tar xhf Module-Runtime-0.016.tar.gz",
                         "tar xhf Sub-Quote-2.006008.tar.gz",
-                        "cd Path-Tiny-0.146 && perl Makefile.PL PREFIX=/app && make && make install",
+                        "cd Path-Tiny-0.148 && perl Makefile.PL PREFIX=/app && make && make install",
                         "cd Template-Toolkit-3.102 && perl Makefile.PL PREFIX=/app && make && make install",
                         "cd Moo-2.005005 && perl Makefile.PL PREFIX=/app && make && make install",
                         "cd Module-Runtime-0.016 && perl Makefile.PL PREFIX=/app && make && make install",
@@ -140,8 +140,8 @@
                     "sources": [
                         {
                             "type": "file",
-                            "url": "https://cpan.metacpan.org/authors/id/D/DA/DAGOLDEN/Path-Tiny-0.146.tar.gz",
-                            "sha256": "861ef09bca68254e9ab24337bb6ec9d58593a792e9d68a27ee6bec2150f06741",
+                            "url": "https://cpan.metacpan.org/authors/id/D/DA/DAGOLDEN/Path-Tiny-0.148.tar.gz",
+                            "sha256": "818aed754b74f399e42c238bea738e20a52af89a6e3feb58bec9d0130eea4746",
                             "x-checker-data": {
                                 "type": "anitya",
                                 "project-id": 11962,
