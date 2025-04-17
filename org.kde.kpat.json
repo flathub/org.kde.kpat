@@ -20,8 +20,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/release-service/24.12.3/src/libkdegames-24.12.3.tar.xz",
-                    "sha256": "d640d5a590450e476e903a341e916004a46ad72d0db07f4201e75e4e5a7c02e5",
+                    "url": "https://download.kde.org/stable/release-service/25.04.0/src/libkdegames-25.04.0.tar.xz",
+                    "sha256": "69a21bae741b28e8c79c2dfdee352a7cebc9c6658aaa58388d581b2a7a40047f",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 8763,
@@ -122,11 +122,11 @@
                     "buildsystem": "simple",
                     "build-commands": [
                         "echo 'this is a workaround for a flatpak+perl limitation'",
-                        "tar xhf Path-Tiny-0.148.tar.gz",
-                        "tar xhf Template-Toolkit-3.102.tar.gz",
-                        "tar xhf Moo-2.005005.tar.gz",
-                        "tar xhf Module-Runtime-0.016.tar.gz",
-                        "tar xhf Sub-Quote-2.006008.tar.gz",
+                        "tar xhf Path-Tiny-0.148.tar.gz --no-same-owner",
+                        "tar xhf Template-Toolkit-3.102.tar.gz --no-same-owner",
+                        "tar xhf Moo-2.005005.tar.gz --no-same-owner",
+                        "tar xhf Module-Runtime-0.016.tar.gz --no-same-owner",
+                        "tar xhf Sub-Quote-2.006008.tar.gz --no-same-owner",
                         "cd Path-Tiny-0.148 && perl Makefile.PL PREFIX=/app && make && make install",
                         "cd Template-Toolkit-3.102 && perl Makefile.PL PREFIX=/app && make && make install",
                         "cd Moo-2.005005 && perl Makefile.PL PREFIX=/app && make && make install",
@@ -225,8 +225,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/release-service/24.12.3/src/kpat-24.12.3.tar.xz",
-                    "sha256": "440cf85d977d8abb5f80928913d7ebdfbb2fc7602ab3d70d1cc5fe7954810d16",
+                    "url": "https://download.kde.org/stable/release-service/25.04.0/src/kpat-25.04.0.tar.xz",
+                    "sha256": "62f53cc2554aff9f051c637a47bae8b9c5fdad5734c40a6d5703daab6ca35669",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 8763,
