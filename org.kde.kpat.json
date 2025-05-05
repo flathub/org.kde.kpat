@@ -40,7 +40,7 @@
             ],
             "build-options": {
                 "env": {
-                    "PERLLIB": "/app/lib/perl5/site_perl/5.40.1:/app/lib/perl5/site_perl/5.40.1/arch"
+                    "PERLLIB": "/app/lib/perl5:/app/lib/perl5/arch"
                 }
             },
             "sources": [
@@ -127,15 +127,15 @@
                         "tar xhf Moo-2.005005.tar.gz --no-same-owner",
                         "tar xhf Module-Runtime-0.016.tar.gz --no-same-owner",
                         "tar xhf Sub-Quote-2.006008.tar.gz --no-same-owner",
-                        "cd Path-Tiny-0.148 && perl Makefile.PL PREFIX=/app && make && make install",
-                        "cd Template-Toolkit-3.102 && perl Makefile.PL PREFIX=/app && make && make install",
-                        "cd Moo-2.005005 && perl Makefile.PL PREFIX=/app && make && make install",
-                        "cd Module-Runtime-0.016 && perl Makefile.PL PREFIX=/app && make && make install",
-                        "cd Sub-Quote-2.006008 && perl Makefile.PL PREFIX=/app && make && make install",
-                        "ln -s /app/lib/perl5/site_perl/5.40.1/$(basename `ls -d /usr/lib/perl5/5.40.1/*-linux`) /app/lib/perl5/site_perl/5.40.1/arch"
+                        "cd Path-Tiny-0.148 && perl Makefile.PL INSTALL_BASE=/app && make && make install",
+                        "cd Template-Toolkit-3.102 && perl Makefile.PL INSTALL_BASE=/app && make && make install",
+                        "cd Moo-2.005005 && perl Makefile.PL INSTALL_BASE=/app && make && make install",
+                        "cd Module-Runtime-0.016 && perl Makefile.PL INSTALL_BASE=/app && make && make install",
+                        "cd Sub-Quote-2.006008 && perl Makefile.PL INSTALL_BASE=/app && make && make install",
+                        "ln -s /app/lib/perl5/$(basename `ls -d /usr/lib/perl5/5.*/*-linux`) /app/lib/perl5/arch"
                     ],
                     "post-install": [
-                        "chmod -R u+w /app/lib/perl5/site_perl"
+                        "chmod -R u+w /app/lib/perl5"
                     ],
                     "sources": [
                         {
@@ -202,7 +202,7 @@
             "buildsystem": "cmake",
             "build-options": {
                 "env": {
-                    "PERLLIB": "/app/lib/perl5/site_perl/5.40.1:/app/lib/perl5/site_perl/5.40.1/arch"
+                    "PERLLIB": "/app/lib/perl5:/app/lib/perl5/arch"
                 }
             },
             "sources": [
