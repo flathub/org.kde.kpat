@@ -130,7 +130,7 @@
                         "cd Path-Tiny-0.148 && perl Makefile.PL INSTALL_BASE=/app && make && make install",
                         "cd Template-Toolkit-3.102 && perl Makefile.PL INSTALL_BASE=/app && make && make install",
                         "cd Moo-2.005005 && perl Makefile.PL INSTALL_BASE=/app && make && make install",
-                        "cd Module-Runtime-0.016 && perl Makefile.PL INSTALL_BASE=/app && make && make install",
+                        "cd Module-Runtime-0.018 && perl Makefile.PL INSTALL_BASE=/app && make && make install",
                         "cd Sub-Quote-2.006008 && perl Makefile.PL INSTALL_BASE=/app && make && make install",
                         "ln -s /app/lib/perl5/$(basename `ls -d /usr/lib/perl5/5.*/*-linux`) /app/lib/perl5/arch"
                     ],
