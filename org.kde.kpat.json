@@ -125,12 +125,12 @@
                         "tar xhf Path-Tiny-0.148.tar.gz --no-same-owner",
                         "tar xhf Template-Toolkit-3.102.tar.gz --no-same-owner",
                         "tar xhf Moo-2.005005.tar.gz --no-same-owner",
-                        "tar xhf Module-Runtime-0.016.tar.gz --no-same-owner",
+                        "tar xhf Module-Runtime-0.018.tar.gz --no-same-owner",
                         "tar xhf Sub-Quote-2.006008.tar.gz --no-same-owner",
                         "cd Path-Tiny-0.148 && perl Makefile.PL INSTALL_BASE=/app && make && make install",
                         "cd Template-Toolkit-3.102 && perl Makefile.PL INSTALL_BASE=/app && make && make install",
                         "cd Moo-2.005005 && perl Makefile.PL INSTALL_BASE=/app && make && make install",
-                        "cd Module-Runtime-0.016 && perl Makefile.PL INSTALL_BASE=/app && make && make install",
+                        "cd Module-Runtime-0.018 && perl Makefile.PL INSTALL_BASE=/app && make && make install",
                         "cd Sub-Quote-2.006008 && perl Makefile.PL INSTALL_BASE=/app && make && make install",
                         "ln -s /app/lib/perl5/$(basename `ls -d /usr/lib/perl5/5.*/*-linux`) /app/lib/perl5/arch"
                     ],
@@ -173,13 +173,13 @@
                         },
                         {
                             "type": "file",
-                            "url": "https://search.cpan.org/CPAN/authors/id/Z/ZE/ZEFRAM/Module-Runtime-0.016.tar.gz",
-                            "sha256": "68302ec646833547d410be28e09676db75006f4aa58a11f3bdb44ffe99f0f024",
+                            "url": "https://cpan.metacpan.org/authors/id/H/HA/HAARG/Module-Runtime-0.018.tar.gz",
+                            "sha256": "0bf77ef68e53721914ff554eada20973596310b4e2cf1401fc958601807de577",
                             "x-checker-data": {
                                 "type": "anitya",
                                 "project-id": 3111,
                                 "stable-only": true,
-                                "url-template": "https://search.cpan.org/CPAN/authors/id/Z/ZE/ZEFRAM/Module-Runtime-$version.tar.gz"
+                                "url-template": "https://cpan.metacpan.org/authors/id/H/HA/HAARG/Module-Runtime-$version.tar.gz"
                             }
                         },
                         {
