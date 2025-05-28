@@ -125,7 +125,7 @@
                         "tar xhf Path-Tiny-0.148.tar.gz --no-same-owner",
                         "tar xhf Template-Toolkit-3.102.tar.gz --no-same-owner",
                         "tar xhf Moo-2.005005.tar.gz --no-same-owner",
-                        "tar xhf Module-Runtime-0.016.tar.gz --no-same-owner",
+                        "tar xhf Module-Runtime-0.018.tar.gz --no-same-owner",
                         "tar xhf Sub-Quote-2.006008.tar.gz --no-same-owner",
                         "cd Path-Tiny-0.148 && perl Makefile.PL INSTALL_BASE=/app && make && make install",
                         "cd Template-Toolkit-3.102 && perl Makefile.PL INSTALL_BASE=/app && make && make install",
