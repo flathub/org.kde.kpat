@@ -106,8 +106,8 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://pypi.io/packages/source/p/pysol_cards/pysol_cards-0.22.0.tar.gz",
-                            "sha256": "c555ef5e05ad41774e742b603ce6e6ba76e5d013ddf4ae087a3d87c55279f142",
+                            "url": "https://pypi.io/packages/source/p/pysol_cards/pysol_cards-0.24.0.tar.gz",
+                            "sha256": "a985492da81aa1588dfc056d9a7c6ca83f66254c0b90f25afc682a70713d4d4b",
                             "x-checker-data": {
                                 "type": "anitya",
                                 "project-id": 19639,
