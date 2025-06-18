@@ -89,7 +89,6 @@
                                 "type": "pypi",
                                 "name": "random2",
                                 "packagetype": "bdist_wheel"
-                            	}
                             }
                         }
                     ]
