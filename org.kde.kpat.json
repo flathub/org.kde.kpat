@@ -122,12 +122,12 @@
                     "buildsystem": "simple",
                     "build-commands": [
                         "echo 'this is a workaround for a flatpak+perl limitation'",
-                        "tar xhf Path-Tiny-0.148.tar.gz --no-same-owner",
+                        "tar xhf Path-Tiny-0.150.tar.gz --no-same-owner",
                         "tar xhf Template-Toolkit-3.102.tar.gz --no-same-owner",
                         "tar xhf Moo-2.005005.tar.gz --no-same-owner",
                         "tar xhf Module-Runtime-0.018.tar.gz --no-same-owner",
                         "tar xhf Sub-Quote-2.006008.tar.gz --no-same-owner",
-                        "cd Path-Tiny-0.148 && perl Makefile.PL INSTALL_BASE=/app && make && make install",
+                        "cd Path-Tiny-0.150 && perl Makefile.PL INSTALL_BASE=/app && make && make install",
                         "cd Template-Toolkit-3.102 && perl Makefile.PL INSTALL_BASE=/app && make && make install",
                         "cd Moo-2.005005 && perl Makefile.PL INSTALL_BASE=/app && make && make install",
                         "cd Module-Runtime-0.018 && perl Makefile.PL INSTALL_BASE=/app && make && make install",
@@ -140,8 +140,8 @@
                     "sources": [
                         {
                             "type": "file",
-                            "url": "https://cpan.metacpan.org/authors/id/D/DA/DAGOLDEN/Path-Tiny-0.148.tar.gz",
-                            "sha256": "818aed754b74f399e42c238bea738e20a52af89a6e3feb58bec9d0130eea4746",
+                            "url": "https://cpan.metacpan.org/authors/id/D/DA/DAGOLDEN/Path-Tiny-0.150.tar.gz",
+                            "sha256": "ff20713d1a14d257af9c78209001f40dc177e4b9d1496115cbd8726d577946c7",
                             "x-checker-data": {
                                 "type": "anitya",
                                 "project-id": 11962,
