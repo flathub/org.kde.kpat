@@ -25,7 +25,6 @@
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 8763,
-                        "stable-only": true,
                         "url-template": "https://download.kde.org/stable/release-service/$version/src/libkdegames-$version.tar.xz"
                     }
                 }
@@ -49,9 +48,8 @@
                     "url": "https://fc-solve.shlomifish.org/downloads/fc-solve/freecell-solver-6.14.0.tar.xz",
                     "sha256": "1d1125d85422bcd521102d7cb1e7c84b76863fe445dd21879f9779dc6b2ce7dc",
                     "x-checker-data": {
-                        "type": "html",
-                        "url": "https://fc-solve.shlomifish.org/download.html",
-                        "version-pattern": "freecell-solver-([\\d\\.-]+)\\.tar\\.xz",
+                        "type": "anitya",
+                        "project-id": "227651",
                         "url-template": "https://fc-solve.shlomifish.org/downloads/fc-solve/freecell-solver-$version.tar.xz"
                     }
                 }
@@ -71,7 +69,6 @@
                             "x-checker-data": {
                                 "type": "anitya",
                                 "project-id": 230526,
-                                "stable-only": true,
                                 "url-template": "https://github.com/shlomif/rinutils/releases/download/$version/rinutils-$version.tar.xz"
                             }
                         }
@@ -89,10 +86,9 @@
                             "url": "https://files.pythonhosted.org/packages/c2/f8/aba7ea7900492da2dd405aa42aa6160b83490421c7d70cf2d5aa44238a13/random2-1.0.2.tar.gz",
                             "sha256": "3754fcef48267567cd5705fa7da6bbc3809cb3f808740313e6705acc3c057e77",
                             "x-checker-data": {
-                                "type": "anitya",
-                                "project-id": 7793,
-                                "stable-only": true,
-                                "url-template": "https://files.pythonhosted.org/packages/c2/f8/aba7ea7900492da2dd405aa42aa6160b83490421c7d70cf2d5aa44238a13/random2-$version.tar.gz"
+                                "type": "pypi",
+                                "name": "random2",
+                                "packagetype": "bdist_wheel"
                             }
                         }
                     ]
@@ -111,7 +107,6 @@
                             "x-checker-data": {
                                 "type": "anitya",
                                 "project-id": 19639,
-                                "stable-only": true,
                                 "url-template": "https://pypi.io/packages/source/p/pysol_cards/pysol_cards-$version.tar.gz"
                             }
                         }
@@ -122,16 +117,11 @@
                     "buildsystem": "simple",
                     "build-commands": [
                         "echo 'this is a workaround for a flatpak+perl limitation'",
-                        "tar xhf Path-Tiny-0.150.tar.gz --no-same-owner",
-                        "tar xhf Template-Toolkit-3.102.tar.gz --no-same-owner",
-                        "tar xhf Moo-2.005005.tar.gz --no-same-owner",
-                        "tar xhf Module-Runtime-0.018.tar.gz --no-same-owner",
-                        "tar xhf Sub-Quote-2.006008.tar.gz --no-same-owner",
-                        "cd Path-Tiny-0.150 && perl Makefile.PL INSTALL_BASE=/app && make && make install",
-                        "cd Template-Toolkit-3.102 && perl Makefile.PL INSTALL_BASE=/app && make && make install",
-                        "cd Moo-2.005005 && perl Makefile.PL INSTALL_BASE=/app && make && make install",
-                        "cd Module-Runtime-0.018 && perl Makefile.PL INSTALL_BASE=/app && make && make install",
-                        "cd Sub-Quote-2.006008 && perl Makefile.PL INSTALL_BASE=/app && make && make install",
+                        "cd Path-Tiny && perl Makefile.PL INSTALL_BASE=/app && make && make install",
+                        "cd Template-Toolkit && perl Makefile.PL INSTALL_BASE=/app && make && make install",
+                        "cd Moo && perl Makefile.PL INSTALL_BASE=/app && make && make install",
+                        "cd Module-Runtime && perl Makefile.PL INSTALL_BASE=/app && make && make install",
+                        "cd Sub-Quote && perl Makefile.PL INSTALL_BASE=/app && make && make install",
                         "ln -s /app/lib/perl5/$(basename `ls -d /usr/lib/perl5/5.*/*-linux`) /app/lib/perl5/arch"
                     ],
                     "post-install": [
@@ -139,57 +129,57 @@
                     ],
                     "sources": [
                         {
-                            "type": "file",
+                            "type": "archive",
+                            "dest": "Path-Tiny",
                             "url": "https://cpan.metacpan.org/authors/id/D/DA/DAGOLDEN/Path-Tiny-0.150.tar.gz",
                             "sha256": "ff20713d1a14d257af9c78209001f40dc177e4b9d1496115cbd8726d577946c7",
                             "x-checker-data": {
                                 "type": "anitya",
                                 "project-id": 11962,
-                                "stable-only": true,
                                 "url-template": "https://cpan.metacpan.org/authors/id/D/DA/DAGOLDEN/Path-Tiny-$version.tar.gz"
                             }
                         },
                         {
-                            "type": "file",
+                            "type": "archive",
+                            "dest": "Template-Toolkit",
                             "url": "https://cpan.metacpan.org/authors/id/T/TO/TODDR/Template-Toolkit-3.102.tar.gz",
                             "sha256": "d161c89dee9b213a7c55709ea782e2dd5923dbd1215b9576612889e6e74a2e06",
                             "x-checker-data": {
                                 "type": "anitya",
                                 "project-id": 11970,
-                                "stable-only": true,
                                 "url-template": "https://cpan.metacpan.org/authors/id/T/TO/TODDR/Template-Toolkit-$version.tar.gz"
                             }
                         },
                         {
-                            "type": "file",
+                            "type": "archive",
+                            "dest": "Moo",
                             "url": "https://cpan.metacpan.org/authors/id/H/HA/HAARG/Moo-2.005005.tar.gz",
                             "sha256": "fb5a2952649faed07373f220b78004a9c6aba387739133740c1770e9b1f4b108",
                             "x-checker-data": {
                                 "type": "anitya",
                                 "project-id": 3123,
-                                "stable-only": true,
                                 "url-template": "https://cpan.metacpan.org/authors/id/H/HA/HAARG/Moo-$version.tar.gz"
                             }
                         },
                         {
-                            "type": "file",
+                            "type": "archive",
+                            "dest": "Module-Runtime",
                             "url": "https://cpan.metacpan.org/authors/id/H/HA/HAARG/Module-Runtime-0.018.tar.gz",
                             "sha256": "0bf77ef68e53721914ff554eada20973596310b4e2cf1401fc958601807de577",
                             "x-checker-data": {
                                 "type": "anitya",
                                 "project-id": 3111,
-                                "stable-only": true,
                                 "url-template": "https://cpan.metacpan.org/authors/id/H/HA/HAARG/Module-Runtime-$version.tar.gz"
                             }
                         },
                         {
-                            "type": "file",
+                            "type": "archive",
+                            "dest": "Sub-Quote",
                             "url": "https://search.cpan.org/CPAN/authors/id/H/HA/HAARG/Sub-Quote-2.006008.tar.gz",
                             "sha256": "94bebd500af55762e83ea2f2bc594d87af828072370c7110c60c238a800d15b2",
                             "x-checker-data": {
                                 "type": "anitya",
                                 "project-id": 12678,
-                                "stable-only": true,
                                 "url-template": "https://search.cpan.org/CPAN/authors/id/H/HA/HAARG/Sub-Quote-$version.tar.gz"
                             }
                         }
@@ -213,7 +203,6 @@
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 229362,
-                        "stable-only": true,
                         "url-template": "https://fc-solve.shlomifish.org/downloads/fc-solve/black-hole-solver-$version.tar.xz"
                     }
                 }
@@ -230,7 +219,6 @@
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 8763,
-                        "stable-only": true,
                         "url-template": "https://download.kde.org/stable/release-service/$version/src/kpat-$version.tar.xz"
                     }
                 }
