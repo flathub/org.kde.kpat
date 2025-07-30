@@ -83,8 +83,8 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://files.pythonhosted.org/packages/c2/f8/aba7ea7900492da2dd405aa42aa6160b83490421c7d70cf2d5aa44238a13/random2-1.0.2.tar.gz",
-                            "sha256": "3754fcef48267567cd5705fa7da6bbc3809cb3f808740313e6705acc3c057e77",
+                            "url": "https://files.pythonhosted.org/packages/78/22/2fb1b057fbcf3f3c51f2cb706f2d3aec181e7fdfc46d560c133b7de81cde/random2-1.0.2-py3-none-any.whl",
+                            "sha256": "c2b92ac9d28f94d3759075302c12f94e3dcc09f2d1c9e9f65fdbbb1d6b710024",
                             "x-checker-data": {
                                 "type": "pypi",
                                 "name": "random2",
