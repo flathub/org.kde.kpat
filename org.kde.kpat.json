@@ -49,7 +49,7 @@
                     "sha256": "1d1125d85422bcd521102d7cb1e7c84b76863fe445dd21879f9779dc6b2ce7dc",
                     "x-checker-data": {
                         "type": "anitya",
-                        "project-id": "227651",
+                        "project-id": 227651,
                         "url-template": "https://fc-solve.shlomifish.org/downloads/fc-solve/freecell-solver-$version.tar.xz"
                     }
                 }
@@ -87,8 +87,7 @@
                             "sha256": "3754fcef48267567cd5705fa7da6bbc3809cb3f808740313e6705acc3c057e77",
                             "x-checker-data": {
                                 "type": "pypi",
-                                "name": "random2",
-                                "packagetype": "bdist_wheel"
+                                "name": "random2"
                             }
                         }
                     ]
