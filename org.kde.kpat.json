@@ -1,7 +1,7 @@
 {
     "id": "org.kde.kpat",
     "runtime": "org.kde.Platform",
-    "runtime-version": "6.9",
+    "runtime-version": "6.10",
     "sdk": "org.kde.Sdk",
     "command": "kpat",
     "rename-icon": "kpat",
@@ -39,7 +39,7 @@
             ],
             "build-options": {
                 "env": {
-                    "PERLLIB": "/app/lib/perl5:/app/lib/perl5/arch"
+                    "PERL5LIB": "/app/lib/perl5:/app/lib/perl5/arch"
                 }
             },
             "sources": [
@@ -70,6 +70,24 @@
                                 "type": "anitya",
                                 "project-id": 230526,
                                 "url-template": "https://github.com/shlomif/rinutils/releases/download/$version/rinutils-$version.tar.xz"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "six",
+                    "buildsystem": "simple",
+                    "build-commands": [
+                        "pip3 install --prefix=/app --no-deps ."
+                    ],
+                    "sources": [
+                        {
+                            "type": "archive",
+                            "url": "https://files.pythonhosted.org/packages/94/e7/b2c673351809dca68a0e064b6af791aa332cf192da575fd474ed7d6f16a2/six-1.17.0.tar.gz",
+                            "sha256": "ff70335d468e7eb6ec65b95b99d3a2836546063f63acc5171de367e834932a81",
+                            "x-checker-data": {
+                                "type": "pypi",
+                                "name": "six"
                             }
                         }
                     ]
@@ -120,8 +138,7 @@
                         "cd Template-Toolkit && perl Makefile.PL INSTALL_BASE=/app && make && make install",
                         "cd Moo && perl Makefile.PL INSTALL_BASE=/app && make && make install",
                         "cd Module-Runtime && perl Makefile.PL INSTALL_BASE=/app && make && make install",
-                        "cd Sub-Quote && perl Makefile.PL INSTALL_BASE=/app && make && make install",
-                        "ln -s /app/lib/perl5/$(basename `ls -d /usr/lib/perl5/5.*/*-linux`) /app/lib/perl5/arch"
+                        "cd Sub-Quote && perl Makefile.PL INSTALL_BASE=/app && make && make install"
                     ],
                     "post-install": [
                         "chmod -R u+w /app/lib/perl5"
@@ -191,7 +208,7 @@
             "buildsystem": "cmake",
             "build-options": {
                 "env": {
-                    "PERLLIB": "/app/lib/perl5:/app/lib/perl5/arch"
+                    "PERL5LIB": "/app/lib/perl5:/app/lib/perl5/arch"
                 }
             },
             "sources": [
