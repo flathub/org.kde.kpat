@@ -39,7 +39,7 @@
             ],
             "build-options": {
                 "env": {
-                    "PERLLIB": "/app/lib/perl5:/app/lib/perl5/arch"
+                    "PERL5LIB": "/app/lib/perl5:/app/lib/perl5/arch"
                 }
             },
             "sources": [
@@ -138,8 +138,7 @@
                         "cd Template-Toolkit && perl Makefile.PL INSTALL_BASE=/app && make && make install",
                         "cd Moo && perl Makefile.PL INSTALL_BASE=/app && make && make install",
                         "cd Module-Runtime && perl Makefile.PL INSTALL_BASE=/app && make && make install",
-                        "cd Sub-Quote && perl Makefile.PL INSTALL_BASE=/app && make && make install",
-                        "ln -s /app/lib/perl5/$(basename `ls -d /usr/lib/perl5/5.*/*-linux`) /app/lib/perl5/arch"
+                        "cd Sub-Quote && perl Makefile.PL INSTALL_BASE=/app && make && make install"
                     ],
                     "post-install": [
                         "chmod -R u+w /app/lib/perl5"
@@ -209,7 +208,7 @@
             "buildsystem": "cmake",
             "build-options": {
                 "env": {
-                    "PERLLIB": "/app/lib/perl5:/app/lib/perl5/arch"
+                    "PERL5LIB": "/app/lib/perl5:/app/lib/perl5/arch"
                 }
             },
             "sources": [
