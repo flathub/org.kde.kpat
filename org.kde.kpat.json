@@ -13,6 +13,15 @@
         "--socket=pulseaudio",
         "--socket=wayland"
     ],
+    "cleanup": [
+        "/include",
+        "/lib/cmake",
+        "/lib/pkgconfig",
+        "/man/",
+        "/share/doc",
+        "/share/man",
+        "/share/qlogging-categories6"
+    ],
     "modules": [
         {
             "name": "libkdegames",
